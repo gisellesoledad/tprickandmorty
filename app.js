@@ -102,7 +102,7 @@ const printData = (arr) => {
                 <p>Origen:${origen}</p>
                 <p>Locacion:${personaje.location.name}</p> 
                 <div class="contenedor-button">
-                  <input type="button" class= "button" value=" Ver más" />
+                 <a href ="https://rickandmortyapi.com/api/character/${personaje.id}"  target="_black"><input type="button" class= "button" value="Ver más" /></a>
                 </div>
             </div>
         </div>

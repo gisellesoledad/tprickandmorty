@@ -27,6 +27,24 @@
     cursor: pointer;
 }
 
+
+.mostrar-menu, 
+.esconder-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu li:hover,
+.mostrar-menu,
+.esconder-menu{
+    background-color:rgb(152, 47, 140);
+}
+
+#check{
+    display: none;
+}
+
+
 ul {
     list-style: none;
     display: flex;
@@ -152,4 +170,71 @@ body{
     text-align: center;
     color: #ffffff;
     margin-top: auto;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width:768px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        background-color:  rgb(255, 158, 194,0.95);
+        height:359px;
+        right: -100%;
+        top:0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.5s;
+        border-bottom-left-radius: 44px;
+    }
+
+    .menu li{
+        display: block;
+        padding: 20px ;
+    }
+    
+    .esconder-menu{
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+
+    .mostrar-menu,
+    .esconder-menu{
+    background-color: rgba(235, 235, 235, 0);
+    font-size: 50px;
+    margin-left: 20px;
+    }    
+
+    
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    text-align: end;
+    margin-top: 50px;
+}
+
+.titulo-menu{
+    display: none;
+}
+/*
+li  {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 9px;
+    }*/
+
 }
