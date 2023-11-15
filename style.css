@@ -37,7 +37,8 @@
 .menu li:hover,
 .mostrar-menu,
 .esconder-menu{
-    background-color:rgb(152, 47, 140);
+    background: rgb(18, 112, 189);
+    /*background: radial-gradient(circle, rgb(56, 114, 238) 0%, rgb(34, 92, 218) 47%, rgba(26,107,217,1) 100%);*/
 }
 
 #check{
@@ -77,6 +78,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }  
 
 .card:hover{
@@ -86,7 +89,7 @@ body{
 
 
 .card-content{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     padding-bottom: 50px;
 }
@@ -110,6 +113,9 @@ body{
     transition-duration: 0.8s;
     filter: grayscale(90%);
 }
+.datos-card{
+    padding-top: 16px;
+}
 
 .contenedor-button{ 
     margin-top: 20px;
@@ -117,13 +123,17 @@ body{
 }
 
 .button{
-    width: 50%;
-    background-color: rgb(32 193 202);
+    width: 60%;
+    background: rgb(162,28,209);
+    background: linear-gradient(142deg, rgba(162,28,209,1) 0%, rgba(0,255,252,1) 100%);
     color: black;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 50px;
     text-decoration: none;
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .container-paginador{
@@ -170,6 +180,7 @@ body{
     text-align: center;
     color: #ffffff;
     margin-top: auto;
+    font-family: cursive;
 }
 
 
@@ -183,7 +194,7 @@ body{
 
     .menu{
         position: fixed;
-        background-color:  rgb(255, 158, 194,0.95);
+        background-color:  rgba(0, 0, 0, 0.95);
         height:359px;
         right: -100%;
         top:0;
@@ -191,7 +202,7 @@ body{
         padding: 100px 0px;
         z-index: 100;
         transition: 0.5s;
-        border-bottom-left-radius: 44px;
+        border-bottom-left-radius: 20px;
     }
 
     .menu li{

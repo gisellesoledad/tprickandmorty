@@ -95,12 +95,14 @@ const printData = (arr) => {
                 <div class="card-img-content">
                 <img src=${personaje.image} alt="">
                 </div>
+                <div class="datos-card">
                 <p>Nombre:${personaje.name}</p>
                 <p>Genero:${genero}</p>
                 <p>Especies:${especies}</p>
                 <p>Estado:${estado}</p>
                 <p>Origen:${origen}</p>
                 <p>Locacion:${personaje.location.name}</p> 
+                </div>
                 <div class="contenedor-button">
                  <a href ="https://rickandmortyapi.com/api/character/${personaje.id}"  target="_black"><input type="button" class= "button" value="Ver más" /></a>
                 </div>
