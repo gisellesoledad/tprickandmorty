@@ -1,0 +1,54 @@
+/* DIALOGO  */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background: rgb(28,41,209);
+    background: -moz-radial-gradient(circle, rgba(28,41,209,1) 0%, rgba(25,198,235,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(28,41,209,1) 0%, rgba(25,198,235,1) 100%);
+    background: radial-gradient(circle, rgba(28,41,209,1) 0%, rgba(25,198,235,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1c29d1",endColorstr="#19c6eb",GradientType=1);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 4px solid #fdfcfc;
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #fdfcfc;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .card-img-content1 img{
+    border-radius: 150px;
+    width: 50%;
+    border: 2px solid #fdfcfc;
+  }
+  .datos-card1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #fdfcfc;
+    margin-top: 10px;
+  }

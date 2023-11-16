@@ -104,7 +104,7 @@ const printData = (arr) => {
                 <p>Locacion:${personaje.location.name}</p> 
                 </div>
                 <div class="contenedor-button">
-                 <a href ="https://rickandmortyapi.com/api/character/${personaje.id}"  target="_black"><input type="button" class= "button" value="Ver más" /></a>
+               <input type="button" class= "button" value="Ver más" onclick="buscarCharacter(${personaje.id})"/>
                 </div>
             </div>
         </div>
@@ -217,3 +217,43 @@ todos.addEventListener("click", () => {
 pagination(getData());
 
 
+const getDataCharacter = async (id) => {
+  const URL = `https://rickandmortyapi.com/api/character/${id}`;
+  const response = await fetch(URL);
+  const json = await response.json();
+  return json;
+};
+
+const buscarCharacter = async function (id){
+  const result = await  getDataCharacter(id);
+ // Get the modal
+ console.log (result);
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+const character = document.getElementById("contenido-modal");
+let card = "";
+card = card +
+`
+  <div class="card1">
+      
+      <div class="card-content1">
+
+       
+          <div class="datos-card1">
+            <div class="card-img-content1">
+              <img src=${result.image} alt="">
+            </div>
+            <p>Nombre:${result.name}</p>
+            <p>Cantidad de episodios donde aparece:${result.episode.length}</p>
+          </div>
+      </div>
+  </div>
+
+`;
+character.innerHTML = card;
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+modal.style.display = "block";
+}

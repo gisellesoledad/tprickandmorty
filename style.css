@@ -18,9 +18,11 @@
     display: flex;
     
     justify-content:space-between;
-    align-items: center;
-    
-    
+    align-items: center;   
+}
+
+.logo{
+width: 320px;
 }
 
 .menu ul:hover{
@@ -37,7 +39,7 @@
 .menu li:hover,
 .mostrar-menu,
 .esconder-menu{
-    background: rgb(18, 112, 189);
+    background: rgba(102, 250, 109, 0.705);
     /*background: radial-gradient(circle, rgb(56, 114, 238) 0%, rgb(34, 92, 218) 47%, rgba(26,107,217,1) 100%);*/
 }
 
@@ -83,7 +85,7 @@ body{
 }  
 
 .card:hover{
-    box-shadow: 18px 22px 21px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 18px 22px 21px 0px rgba(36, 36, 36, 0.66);
     cursor: pointer;
 }
 
@@ -156,6 +158,16 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     padding: 8px;
+    background: rgba(102, 250, 109, 0.719); 
+    color: #0c0c0c;
+    border-radius: 9px;
+}
+
+.pagination button:disabled,
+.pagination button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .texto{
@@ -237,7 +249,7 @@ ul {
     margin-top: 50px;
 }
 
-.titulo-menu{
+.logo{
     display: none;
 }
 /*

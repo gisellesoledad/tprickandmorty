@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rick and Morty</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
     rel="stylesheet">
 
@@ -13,7 +14,10 @@
     <input type="checkbox" id="check">
     <label for="check" class="mostrar-menu">&#8801</label>
     <nav class="menu">
-        <p class="titulo-menu">Rick and Morty</p>
+      <div class="contenedor-logo">
+        <img class="logo" src="logo.png" alt="logotipo">
+      </div>
+        <!--<p class="titulo-menu">Rick and Morty</p>-->
         <ul>
           <li id="todos">Todos</li>
           <li id="mujeres">Mujer</li>
@@ -45,5 +49,16 @@
       </div>
     </footer>
     <script src="app.js"></script>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- DIALOGO -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="contenido-modal"></div>
+      </div>
+
+    </div>
   </body>
 </html>
